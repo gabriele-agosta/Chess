@@ -1,4 +1,4 @@
-class Knight
+class Pawn
   attr_accessor :moves
   attr_reader :position
 
@@ -10,7 +10,7 @@ class Knight
   private
 
   def next_moves()
-    permutations = [[2, 1], [2, -1], [-2, 1], [-2, -1], [1, 2], [-1, 2], [1, -2], [-1, -2]]
+    permutations = [[2, 0], [1, 0], [1, 1], [1, -1]]
     moves = []
 
     permutations.each do |permutation|
